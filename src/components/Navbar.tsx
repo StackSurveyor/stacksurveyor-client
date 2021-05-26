@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
         <div className="flex justify-end ">
           <a
             href="/"
-            className="  flex-1 mr-auto text-black text-3xl font-semibold py-2 "
+            className="flex-1 mr-auto text-black text-3xl font-semibold py-3 "
           >
             <img
               alt="StackSurveyor"
@@ -47,7 +47,7 @@ export const Navbar: React.FC = () => {
             <li className="sm:inline-block pl-4">
               <a
                 href="/"
-                className="h-full hover:text-white bg-blurple text-white py-2.5 px-4"
+                className="h-full hover:text-white bg-blurple text-white py-3.5 px-4"
               >
                 Create Survey
               </a>
