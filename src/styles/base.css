@@ -19,6 +19,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 .bg-blurple {
   background-color: #5551ff;
+}
+
+.nav-button {
+  padding-top: 1.85rem;
+  padding-bottom: 1.85rem;
 }

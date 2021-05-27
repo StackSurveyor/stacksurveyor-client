@@ -15,11 +15,14 @@
 
 import React from "react";
 import { Navbar } from "../components/Navbar";
+import { Hero } from "../modules/home/Hero";
+import "../styles/homepage.css";
 
 export const Homepage: React.FC = () => {
   return (
     <div>
       <Navbar />
+      <Hero />
     </div>
   );
 };
