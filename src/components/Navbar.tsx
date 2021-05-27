@@ -19,42 +19,44 @@ import NavLogo from "../img/logo.png";
 
 export const Navbar: React.FC = () => {
   return (
-    <nav className="bg-white shadow-lg font-poppins">
-      <div>
-        <div className="flex justify-end ">
-          <a
-            href="/"
-            className="flex-1 mr-auto text-black text-3xl font-semibold py-3 "
-          >
-            <img
-              alt="StackSurveyor"
-              className="ml-10 pr-10 h-8"
-              draggable={false}
-              src={NavLogo}
-            />
-          </a>
-          <ul className="text-black-400 sm:self-center text-xl border-t sm:border-none">
-            <li className="sm:inline-block px-4">
-              <a href="/" className="p-3">
-                Log In
-              </a>
-            </li>
-            <li className="sm:inline-block px-4">
-              <a href="/" className="p-3">
-                Sign Up
-              </a>
-            </li>
-            <li className="sm:inline-block pl-4">
-              <a
-                href="/"
-                className="h-full hover:text-white bg-blurple text-white py-3.5 px-4"
-              >
-                Create Survey
-              </a>
-            </li>
-          </ul>
+    <section className="navbar-section">
+      <nav className="bg-white shadow-lg font-poppins">
+        <div>
+          <div className="flex flex-wrap justify-end ">
+            <a
+              href="/"
+              className="flex-1 mr-auto text-black text-3xl font-semibold py-7"
+            >
+              <img
+                alt="StackSurveyor"
+                className="ml-10 pr-10 h-8"
+                draggable={false}
+                src={NavLogo}
+              />
+            </a>
+            <ul className="text-black-400 sm:self-center text-xl border-t sm:border-none flex-wrap">
+              <li className="sm:inline-block px-4">
+                <a href="/" className="p-3">
+                  Log In
+                </a>
+              </li>
+              <li className="sm:inline-block px-4">
+                <a href="/" className="p-3">
+                  Sign Up
+                </a>
+              </li>
+              <li className="sm:inline-block pl-4">
+                <a
+                  href="/"
+                  className="nav-button h-full hover:text-white bg-blurple shadow-lg text-white px-7"
+                >
+                  Create Survey
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
   );
 };

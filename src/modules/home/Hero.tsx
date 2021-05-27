@@ -14,7 +14,48 @@
 //	along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import React from "react";
+import SurveyForm from "../../img/undraw_customer_survey_form.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 export const Hero: React.FC = () => {
-  return <div></div>;
+  return (
+    <section className="hero-section">
+      <div className="hero-body relative">
+        <div className="hero-content absolute">
+          <h1 className="text-lg text-white">
+            PREMIUM SURVEYS NOW FREE
+            <br />
+            FOR EVERYONE
+          </h1>
+          <p className="text-xl text-white pt-10">
+            We have engineered the service for creating
+            <br /> and taking premium, simple and secure surveys from
+            <br />
+            the ease of the world.
+          </p>
+          <form>
+            <div>
+              <input
+                className="mt-16 px-5"
+                placeholder="HAVE A SURVEY CODE? ENTER HERE"
+                type="text"
+                maxLength={6}
+              />
+              <button>
+                <FontAwesomeIcon icon={faChevronRight} />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div className="animatedParent">
+          <img
+            className="absolute animated fadeInRight"
+            src={SurveyForm}
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  );
 };
